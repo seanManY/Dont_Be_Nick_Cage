@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour {
     public GameObject great;
     public GameObject whatever;
     public GameObject kool;
+    public GameObject sure;
 
     private GameObject[] wordAR;
 
@@ -26,12 +27,13 @@ public class GameController : MonoBehaviour {
         fireTimer = 0;
         randomWord = 0;
 
-        wordAR = new GameObject[5];
+        wordAR = new GameObject[6];
         wordAR[0] = itFine;
         wordAR[1] = okay;
         wordAR[2] = great;
         wordAR[3] = whatever;
         wordAR[4] = kool;
+        wordAR[5] = sure;
 		
 	}
 
@@ -52,10 +54,11 @@ public class GameController : MonoBehaviour {
             
                 fireTimer = 0;
                 randomWord = Random.Range(0, 5);
-                randomX = Random.Range(4.0f, 6.0f);
-                randomY = Random.Range(-0.5f, 1.8f);
-                Instantiate(wordAR[randomWord], new Vector3(randomX, randomY, 5), Quaternion.identity);
+                randomX = Random.Range(8f, 35f);
+                randomY = Random.Range(3f, 13f);
+                Instantiate(wordAR[randomWord], new Vector3(randomX, randomY, 40), Quaternion.identity);
             }
        }
+      
 	}
 }

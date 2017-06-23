@@ -5,7 +5,8 @@ using UnityEngine;
 public class Word_Script : MonoBehaviour
 {
 
-    public int speed = 1;
+    public int speed = 50;
+    int deathTimer = 0;
 
     // Use this for initialization
     void Start()
@@ -20,6 +21,13 @@ public class Word_Script : MonoBehaviour
     {
 
         transform.Translate(Time.deltaTime * -speed, 0, 0);
+
+        if (deathTimer >= 500)
+        {
+            Destroy(this.gameObject);
+            deathTimer = 0;
+        }
+        deathTimer++;
 
     }
 
