@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 23069809886601524}
   - component: {fileID: 102687596307973086}
   - component: {fileID: 114801180844823610}
+  - component: {fileID: 95656926584964210}
   m_Layer: 0
   m_Name: ItsFine
   m_TagString: Untagged
@@ -72,7 +73,25 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &95656926584964210
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1590982526005504}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!102 &102687596307973086
 TextMesh:
   serializedVersion: 3
