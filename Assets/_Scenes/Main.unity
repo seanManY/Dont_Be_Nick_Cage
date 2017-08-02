@@ -412,9 +412,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 446741307}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16ddf37a7f06ced4697cbc816457411a, type: 3}
+  m_Script: {fileID: 11500000, guid: fd96733970fdd9a49846fcc1fa9b9c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorial: {fileID: 0}
+  counter: 5
 --- !u!1 &676156167
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +640,8 @@ GameObject:
   - component: {fileID: 1373140485}
   - component: {fileID: 1373140487}
   - component: {fileID: 1373140486}
+  - component: {fileID: 1373140488}
+  - component: {fileID: 1373140489}
   m_Layer: 0
   m_Name: Tutorial
   m_TagString: Untagged
@@ -781,6 +785,38 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1373140484}
+--- !u!111 &1373140488
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373140484}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 62eb479c11202984c9957b6d2967d9d6, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 62eb479c11202984c9957b6d2967d9d6, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &1373140489
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373140484}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 98401607793935a40b6fd7c327617a9b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1510969645
 GameObject:
   m_ObjectHideFlags: 0
