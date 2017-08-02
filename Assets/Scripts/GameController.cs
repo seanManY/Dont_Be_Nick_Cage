@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour {
     public GameObject whatever;
     public GameObject kool;
     public GameObject sure;
+    public GameObject score;
 
     private GameObject[] wordAR;
 
@@ -34,8 +35,9 @@ public class GameController : MonoBehaviour {
         wordAR[3] = whatever;
         wordAR[4] = kool;
         wordAR[5] = sure;
-		
-	}
+        
+
+    }
 
     void Update()
     {
