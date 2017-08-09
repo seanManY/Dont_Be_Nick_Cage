@@ -20,6 +20,8 @@ public class GameController : MonoBehaviour {
     private int randomWord;
     private float randomY;
     private float randomX;
+
+    public GameObject canvas;
     
 
 	// Use this for initialization
@@ -55,12 +57,22 @@ public class GameController : MonoBehaviour {
             {
             
                 fireTimer = 0;
+
                 randomWord = Random.Range(0, 5);
-                randomX = Random.Range(8f, 35f);
-                randomY = Random.Range(3f, 13f);
-                Instantiate(wordAR[randomWord], new Vector3(randomX, randomY, 40), Quaternion.identity);
+                randomX = Random.Range(-500, -80);
+                randomY = Random.Range(150, 0);
+
+                Debug.Log(randomX);
+
+                GameObject floatingText = Instantiate(wordAR[1]) as GameObject;
+                Vector2 spawnPosition = new Vector2(randomY, randomY);
+                floatingText.transform.SetParent(canvas.transform);
+                floatingText.GetComponent<RectTransform>().anchoredPosition = spawnPosition;
+
+                //Instantiate(wordAR[randomWord], new Vector3(randomX, randomY, 40), Quaternion.identity);
             }
        }
       
 	}
+
 }

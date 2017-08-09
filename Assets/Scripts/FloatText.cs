@@ -9,6 +9,7 @@ public class FloatText : MonoBehaviour {
     public int score = 0;
 
     bool display = false;
+    private float delTimer = 10f;
 
     // Use this for initialization
     void Start () {
@@ -21,6 +22,13 @@ public class FloatText : MonoBehaviour {
 	void Update () {
 
         text.text = "+" + score;
+
+        delTimer -= Time.deltaTime;
+        if(delTimer < 0)
+        {
+            Destroy(this.gameObject);
+        }
+
 	}
     
 }

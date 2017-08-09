@@ -10,11 +10,17 @@ public class Score : MonoBehaviour {
     public GameObject FloatingTextPrefab;
     public Canvas canvas;
 
-    public int maxRange = 5;
-    public int minRange = 10;
+    public int    maxRange = 5;
+    public int    minRange = 10;
     private float timer;
     
-    private int ranScore;
+    private int   ranScore;
+
+    private int   penCounter = 0;
+    public  int   penalty = 5;
+    public int    penMax = 25;
+    public int    penMin = 50;
+
 
     void Start()
     {
@@ -45,6 +51,13 @@ public class Score : MonoBehaviour {
 
                 //sets random arbitary amount of points for the player
                 ranScore = Random.Range(1, 100);
+
+                penCounter--;
+                if(penCounter > penalty)
+                {
+                    //penFuntion
+                    penCounter = 0;
+                }
             }
         }
 	}
