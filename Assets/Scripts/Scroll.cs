@@ -12,15 +12,19 @@ public class Scroll : MonoBehaviour {
     public float speed = 0.5f;
     public Renderer rend;
 
+    public PlayerScript player;
+
 	// Use this for initialization
 	void Start () {
         rend = GetComponent<Renderer>();
+        player = GameObject.Find("Player").GetComponent<PlayerScript>();
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
-        if (Input.GetKey(KeyCode.Space))
+        Debug.Log(player.getEnd());
+        if (player.getEnd())
         {
             Vector2 offset = new Vector2(Time.time * speed, 0);
 

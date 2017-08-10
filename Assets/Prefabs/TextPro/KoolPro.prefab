@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 222847432336689252}
   - component: {fileID: 114651035970771448}
   - component: {fileID: 111205648716169142}
-  - component: {fileID: 114763167303047752}
+  - component: {fileID: 114891982203568902}
   m_Layer: 0
-  m_Name: OkayPro
+  m_Name: KoolPro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '"Okay"'
+  m_text: '"Kool"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 715b80e429c437e40867928a4e1fc975, type: 2}
@@ -157,7 +157,7 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &114763167303047752
+--- !u!114 &114891982203568902
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

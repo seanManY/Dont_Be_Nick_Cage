@@ -62,10 +62,8 @@ public class GameController : MonoBehaviour {
                 randomX = Random.Range(-500, -80);
                 randomY = Random.Range(150, 0);
 
-                Debug.Log(randomX);
-
-                GameObject floatingText = Instantiate(wordAR[1]) as GameObject;
-                Vector2 spawnPosition = new Vector2(randomY, randomY);
+                GameObject floatingText = Instantiate(wordAR[randomWord]) as GameObject;
+                Vector2 spawnPosition = new Vector2(randomX, randomY);
                 floatingText.transform.SetParent(canvas.transform);
                 floatingText.GetComponent<RectTransform>().anchoredPosition = spawnPosition;
 

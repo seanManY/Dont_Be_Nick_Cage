@@ -200,12 +200,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec81ea74ad98db43ba2a420802d611a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itFine: {fileID: 1590982526005504, guid: 2f7186aa8ff1bb945a299ded16f9c8d8, type: 2}
-  okay: {fileID: 1606285543986526, guid: 09a960151ec9fb649a4996bdbf164b93, type: 2}
-  great: {fileID: 1557690859738082, guid: 34fded99b3b23834589f592413ba4217, type: 2}
-  whatever: {fileID: 1482469469636806, guid: b4a85e30fca07cb489242a056d3b0794, type: 2}
-  kool: {fileID: 1428514902871844, guid: 0e02dfb942adeba49934e85d6d8c082a, type: 2}
-  sure: {fileID: 1105866485278540, guid: a50475d6f4921524ab02f469656965f8, type: 2}
+  itFine: {fileID: 1606285543986526, guid: 20859d304232ae147b0baa3bcaa8981d, type: 2}
+  okay: {fileID: 1606285543986526, guid: 9c439bf994d84164f842560f7f19cc3c, type: 2}
+  great: {fileID: 1606285543986526, guid: d864930bd23f5954c95140179ec96f9e, type: 2}
+  whatever: {fileID: 1606285543986526, guid: 9c439bf994d84164f842560f7f19cc3c, type: 2}
+  kool: {fileID: 1606285543986526, guid: f492a3884bd2c634d9eb43f2d33bfab6, type: 2}
+  sure: {fileID: 1606285543986526, guid: 4f0557699cb788c45964d5dd8984fdab, type: 2}
   score: {fileID: 0}
   fireRate: 200
   canvas: {fileID: 446741307}
