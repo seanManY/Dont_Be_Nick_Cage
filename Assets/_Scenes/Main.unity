@@ -209,6 +209,7 @@ MonoBehaviour:
   score: {fileID: 0}
   fireRate: 200
   canvas: {fileID: 446741307}
+  playerScript: {fileID: 0}
 --- !u!4 &184781042
 Transform:
   m_ObjectHideFlags: 0
@@ -477,6 +478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FloatingTextPrefab: {fileID: 1181352262649684, guid: 2f127133fb8627e4a99fdcc642895839,
+    type: 2}
+  NegTextPrefab: {fileID: 1875856977697678, guid: bfefa087d0eb23b4ba8f0a4f20c1ac5c,
     type: 2}
   canvas: {fileID: 446741309}
   maxRange: 5
@@ -876,6 +879,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951587761}
   - component: {fileID: 951587760}
+  - component: {fileID: 951587762}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -936,6 +940,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &951587762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 951587759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93b21c302e78b047a14b669cecc8a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1302033543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.05
   rend: {fileID: 0}
+  player: {fileID: 0}
 --- !u!23 &1510969647
 MeshRenderer:
   m_ObjectHideFlags: 0

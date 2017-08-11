@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour {
     private float randomX;
 
     public GameObject canvas;
+    public PlayerScript playerScript;
     
 
 	// Use this for initialization
@@ -37,7 +38,8 @@ public class GameController : MonoBehaviour {
         wordAR[3] = whatever;
         wordAR[4] = kool;
         wordAR[5] = sure;
-        
+
+        playerScript = GameObject.Find("Player").GetComponent<PlayerScript>();
 
     }
 
@@ -49,7 +51,7 @@ public class GameController : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () 
     {
-       if(Input.GetKey(KeyCode.Space)) 
+       if(playerScript.getEnd()) 
        {
             fireTimer++;
         
